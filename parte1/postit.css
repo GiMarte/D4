@@ -1,3 +1,21 @@
+@keyframes drop {
+  0% {
+    transform: translate(0, -9000px);
+  }
+
+  30% {
+    transform: translate(0, 0px);
+  }
+  65% {
+    transform: translate(0, 100px);
+  }
+
+  70%,
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
 body {
   background-color: #666666;
   margin: 3em;
@@ -20,6 +38,7 @@ body {
   border-radius: 2px;
   flex-grow: 1;
   flex-basis: 20%;
+  animation: drop 1s ease-in;
 }
 .giallo {
   background: #bdbda3;
